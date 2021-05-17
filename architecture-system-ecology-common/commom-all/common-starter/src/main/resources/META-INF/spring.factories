@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.jdl.ecology.starter.format.autoconfiguration.HelloAutoConfiguration
