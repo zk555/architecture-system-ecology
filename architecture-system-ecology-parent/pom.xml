@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.4.5</version>
+        <version>2.3.4.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>cn.jdl.ecology</groupId>
@@ -103,6 +103,9 @@
         <jaxb-api.version>2.3.1</jaxb-api.version>
         <jaxws-api.version>2.3.1</jaxws-api.version>
         <commons-csv.version>1.8</commons-csv.version>
+        <api-pay.version>0.0.1-SNAPSHOT</api-pay.version>
+        <api-base.version>0.0.1-SNAPSHOT</api-base.version>
+        <reactor-core.version>3.2.8.RELEASE</reactor-core.version>
     </properties>
 
 
@@ -111,13 +114,13 @@
         <dependencies>
 
             <!-- spring-cloud -->
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.cloud</groupId>-->
+<!--                <artifactId>spring-cloud-dependencies</artifactId>-->
+<!--                <version>${spring-cloud.version}</version>-->
+<!--                <type>pom</type>-->
+<!--                <scope>import</scope>-->
+<!--            </dependency>-->
 
             <!-- spring-boot -->
             <dependency>
@@ -127,7 +130,16 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
+            <!--WebFlux依赖-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-webflux</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>io.projectreactor</groupId>
+                <artifactId>reactor-core</artifactId>
+                <version>${reactor-core.version}</version>
+            </dependency>
             <!-- spring-alibaba -->
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
@@ -463,6 +475,17 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-csv</artifactId>
                 <version>${commons-csv.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.jdl.ecologyy</groupId>
+                <artifactId>architecture-system-ecology-api-pay</artifactId>
+                <version>${api-pay.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.jdl.ecology</groupId>
+                <artifactId>architecture-system-ecology-api-base</artifactId>
+                <version>${api-base.version}</version>
+                <scope>compile</scope>
             </dependency>
         </dependencies>
 
