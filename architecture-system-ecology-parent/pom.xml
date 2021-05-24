@@ -106,6 +106,11 @@
         <api-pay.version>0.0.1-SNAPSHOT</api-pay.version>
         <api-base.version>0.0.1-SNAPSHOT</api-base.version>
         <reactor-core.version>3.2.8.RELEASE</reactor-core.version>
+        <curator.version>2.4.2</curator.version>
+        <commons-cli.version>1.2</commons-cli.version>
+        <protostuff-core.version>1.0.7</protostuff-core.version>
+        <objenesis.version>2.1</objenesis.version>
+        <javassist.version>3.21.0-GA</javassist.version>
     </properties>
 
 
@@ -486,6 +491,46 @@
                 <artifactId>architecture-system-ecology-api-base</artifactId>
                 <version>${api-base.version}</version>
                 <scope>compile</scope>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.apache.curator</groupId>
+                <artifactId>curator-framework</artifactId>
+                <version>${curator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.curator</groupId>
+                <artifactId>curator-recipes</artifactId>
+                <version>${curator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-cli</groupId>
+                <artifactId>commons-cli</artifactId>
+                <version>${commons-cli.version}</version>
+            </dependency>
+
+            <!--google Protostuff -->
+            <dependency>
+                <groupId>com.dyuproject.protostuff</groupId>
+                <artifactId>protostuff-core</artifactId>
+                <version>${protostuff-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.dyuproject.protostuff</groupId>
+                <artifactId>protostuff-runtime</artifactId>
+                <version>${protostuff-core.version}</version>
+            </dependency>
+            <!-- Objenesis -->
+            <dependency>
+                <groupId>org.objenesis</groupId>
+                <artifactId>objenesis</artifactId>
+                <version>${objenesis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.javassist</groupId>
+                <artifactId>javassist</artifactId>
+                <version>${javassist.version}</version>
             </dependency>
         </dependencies>
 
