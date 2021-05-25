@@ -14,7 +14,6 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <!--网关-->
-        <module>architecture-system-ecology-gate</module>
         <module>architecture-system-ecology-api</module>
         <module>architecture-system-ecology-order</module>
         <module>architecture-system-ecology-common</module>
