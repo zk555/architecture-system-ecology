@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
  * @create 2021-05-25 15:18
  **/
 @Configuration
-@ComponentScan(basePackages = "cn.jdl.ecology.rpc.rpcService")
+@ComponentScan(basePackages = "cn.jdl.ecology")
 public class SpringConfig {
 
     @Bean(name="gpRpcServer")

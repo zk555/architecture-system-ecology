@@ -36,7 +36,7 @@ public class ServiceDiscoveryWithZk implements IServiceDiscovery {
     @Override
     public String discovery(String serviceName) {
         //完成了服务地址的查找(服务地址被删除)
-        String path = "/" + serviceName; //registry/com.gupaoedu.demo.HelloService
+        String path = "/" + "cn.jdl.ecology.rpc.rpcService.IHelloService-v1.0"; //registry/com.gupaoedu.demo.HelloService
         if (serviceRepos.isEmpty()) {
             try {
                 serviceRepos = curatorFramework.getChildren().forPath(path);
