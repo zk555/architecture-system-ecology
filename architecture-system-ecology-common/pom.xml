@@ -11,8 +11,8 @@
 
     <artifactId>architecture-system-ecology-common</artifactId>
     <modules>
-        <module>commom-all</module>
-        <module>id-generator</module>
+        <module>common-all</module>
+        <module>common-annotation</module>
     </modules>
 
 </project>
