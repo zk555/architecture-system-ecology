@@ -27,6 +27,7 @@
         <!-- spring -->
         <spring-cloud.version>Hoxton.SR8</spring-cloud.version>
         <spring-boot.version>2.3.4.RELEASE</spring-boot.version>
+        <spring-boot.version>2.3.4.RELEASE</spring-boot.version>
         <spring-cloud-alibaba.version>2.2.3.RELEASE</spring-cloud-alibaba.version>
         <!-- paas -->
         <saas-dependencies.version>0.0.1-SNAPSHOT</saas-dependencies.version>
@@ -111,6 +112,10 @@
         <protostuff-core.version>1.0.7</protostuff-core.version>
         <objenesis.version>2.1</objenesis.version>
         <javassist.version>3.21.0-GA</javassist.version>
+        <common-rpc-api.version>1.0-SNAPSHOT</common-rpc-api.version>
+        <common-dubbo-api.version>1.0-SNAPSHOT</common-dubbo-api.version>
+        <springboot.dubbo.version>2.7.1</springboot.dubbo.version>
+        <dubbo.version>2.7.2</dubbo.version>
     </properties>
 
 
@@ -492,8 +497,11 @@
                 <version>${api-base.version}</version>
                 <scope>compile</scope>
             </dependency>
-
-
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.apache.curator</groupId>
                 <artifactId>curator-framework</artifactId>
@@ -531,6 +539,27 @@
                 <groupId>org.javassist</groupId>
                 <artifactId>javassist</artifactId>
                 <version>${javassist.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.jdl.ecology</groupId>
+                <artifactId>common-rpc-api</artifactId>
+                <version>${common-rpc-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.jdl.ecology</groupId>
+                <artifactId>common-dubbo-api</artifactId>
+                <version>${common-dubbo-api.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-spring-boot-starter</artifactId>
+                <version>${springboot.dubbo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>${dubbo.version}</version>
             </dependency>
         </dependencies>
 
