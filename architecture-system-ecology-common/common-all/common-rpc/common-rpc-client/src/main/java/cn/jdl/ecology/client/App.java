@@ -1,8 +1,8 @@
 package cn.jdl.ecology.client;
 
-import cn.jdl.ecology.client.api.IHelloService;
 import cn.jdl.ecology.client.config.SpringConfig;
 import cn.jdl.ecology.client.proxy.RpcProxyClient;
+import cn.jdl.ecology.rpc.api.service.IHelloService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
