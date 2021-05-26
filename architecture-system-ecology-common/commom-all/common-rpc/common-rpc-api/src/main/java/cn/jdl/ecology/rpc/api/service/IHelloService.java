@@ -1,4 +1,4 @@
-package cn.jdl.ecology.rpc.rpcService;
+package cn.jdl.ecology.rpc.api.service;
 
 /**
  * @author zhaokai108

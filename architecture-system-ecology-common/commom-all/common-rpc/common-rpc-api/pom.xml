@@ -3,18 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>commom-all</artifactId>
+        <artifactId>common-rpc</artifactId>
         <groupId>cn.jdl.ecology</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>common-rpc</artifactId>
     <packaging>jar</packaging>
-    <modules>
-        <module>common-rpc-server</module>
-        <module>common-rpc-client</module>
-        <module>common-rpc-api</module>
-    </modules>
+    <artifactId>common-rpc-api</artifactId>
+
 
 </project>

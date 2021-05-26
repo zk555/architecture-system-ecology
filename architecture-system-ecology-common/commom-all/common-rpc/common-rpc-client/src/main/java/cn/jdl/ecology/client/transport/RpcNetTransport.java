@@ -1,6 +1,6 @@
 package cn.jdl.ecology.client.transport;
 
-import cn.jdl.ecology.client.dataBridge.RpcRequest;
+import cn.jdl.ecology.rpc.api.dataBridge.RpcRequest;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;

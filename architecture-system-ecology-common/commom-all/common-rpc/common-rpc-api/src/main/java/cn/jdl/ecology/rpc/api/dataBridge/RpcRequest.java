@@ -1,4 +1,4 @@
-package cn.jdl.ecology.rpc.dataBridge;
+package cn.jdl.ecology.rpc.api.dataBridge;
 
 import java.io.Serializable;
 

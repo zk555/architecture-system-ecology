@@ -1,7 +1,7 @@
-package cn.jdl.ecology.rpc.rpcService.impl;
+package cn.jdl.ecology.rpc.rpcService;
 
 import cn.jdl.ecology.rpc.annotation.RpcService;
-import cn.jdl.ecology.rpc.rpcService.IHelloService;
+import cn.jdl.ecology.rpc.api.service.IHelloService;
 
 /**
  * @author zhaokai108

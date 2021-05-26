@@ -1,8 +1,8 @@
 package cn.jdl.ecology.client.handler;
 
-import cn.jdl.ecology.client.dataBridge.RpcRequest;
 import cn.jdl.ecology.client.transport.RpcNetTransport;
 import cn.jdl.ecology.client.zk.IServiceDiscovery;
+import cn.jdl.ecology.rpc.api.dataBridge.RpcRequest;
 import org.springframework.util.StringUtils;
 
 import java.lang.reflect.InvocationHandler;

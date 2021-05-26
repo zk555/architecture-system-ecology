@@ -111,6 +111,7 @@
         <protostuff-core.version>1.0.7</protostuff-core.version>
         <objenesis.version>2.1</objenesis.version>
         <javassist.version>3.21.0-GA</javassist.version>
+        <common-rpc-api.version>1.0-SNAPSHOT</common-rpc-api.version>
     </properties>
 
 
@@ -531,6 +532,11 @@
                 <groupId>org.javassist</groupId>
                 <artifactId>javassist</artifactId>
                 <version>${javassist.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.jdl.ecology</groupId>
+                <artifactId>common-rpc-api</artifactId>
+                <version>${common-rpc-api.version}</version>
             </dependency>
         </dependencies>
 

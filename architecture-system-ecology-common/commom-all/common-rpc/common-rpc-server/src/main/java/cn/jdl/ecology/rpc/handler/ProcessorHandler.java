@@ -1,6 +1,6 @@
 package cn.jdl.ecology.rpc.handler;
 
-import cn.jdl.ecology.rpc.dataBridge.RpcRequest;
+import cn.jdl.ecology.rpc.api.dataBridge.RpcRequest;
 import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
