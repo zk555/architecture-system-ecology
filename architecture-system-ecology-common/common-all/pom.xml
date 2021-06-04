@@ -16,6 +16,7 @@
         <module>common-dynamic-ds</module>
         <module>common-rpc</module>
         <module>common-dubbo</module>
+        <module>common-nacos</module>
     </modules>
 
 

@@ -116,6 +116,8 @@
         <common-dubbo-api.version>1.0-SNAPSHOT</common-dubbo-api.version>
         <springboot.dubbo.version>2.7.1</springboot.dubbo.version>
         <dubbo.version>2.7.2</dubbo.version>
+        <nacos.version>0.2.2</nacos.version>
+        <nacos.client.version>1.1.1</nacos.client.version>
     </properties>
 
 
@@ -560,6 +562,16 @@
                 <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo</artifactId>
                 <version>${dubbo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.boot</groupId>
+                <artifactId>nacos-config-spring-boot-starter</artifactId>
+                <version>${nacos.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.nacos</groupId>
+                <artifactId>nacos-client</artifactId>
+                <version>${nacos.client.version}</version>
             </dependency>
         </dependencies>
 
