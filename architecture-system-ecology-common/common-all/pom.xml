@@ -18,6 +18,7 @@
         <module>common-dubbo</module>
         <module>common-nacos</module>
         <module>common-juc</module>
+        <module>common-kafka</module>
     </modules>
 
 
