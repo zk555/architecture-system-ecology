@@ -22,7 +22,7 @@ public class DemoConsumer extends Thread{
 
     public DemoConsumer(String topic){
         Properties properties=new Properties();
-        properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,"192.168.13.102:9092,192 .168.13.103:9092,192.168.13.104:9092");
+        properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,"192.168.1.161:9092");
         properties.put(ConsumerConfig.GROUP_ID_CONFIG, "practice-consumer");
         properties.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, "true");//设置offset自动提交
         properties.put(ConsumerConfig.AUTO_COMMIT_INTERVAL_MS_CONFIG, "1000");//自动提交间隔时间

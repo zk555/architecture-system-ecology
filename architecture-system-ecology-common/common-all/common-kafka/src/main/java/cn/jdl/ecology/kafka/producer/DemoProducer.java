@@ -25,7 +25,7 @@ public class DemoProducer extends Thread {
 
     public DemoProducer(String topic){
         Properties properties=new Properties();
-        properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,"123.56.237.248:9092");
+        properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,"192.168.1.161:9092");
         properties.put(ProducerConfig.CLIENT_ID_CONFIG,"practice-producer");
         properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG,
                 IntegerSerializer.class.getName());
