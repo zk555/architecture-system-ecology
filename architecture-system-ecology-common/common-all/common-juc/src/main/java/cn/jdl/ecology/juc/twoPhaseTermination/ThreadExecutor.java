@@ -65,12 +65,12 @@ public class ThreadExecutor {
         long start = System.currentTimeMillis();
         executor.execute(() -> {
             try {
-                Thread.sleep(5000);
+                Thread.sleep(5000);  //线程阻塞,需要停止线程
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         });
-        executor.shutdown(1000);
+        executor.shutdown(4000);
         long end = System.currentTimeMillis();
         System.out.println(end - start);
     }
