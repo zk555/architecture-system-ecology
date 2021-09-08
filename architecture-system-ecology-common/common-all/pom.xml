@@ -23,6 +23,7 @@
         <module>common-id-generator</module>
         <module>common-loadBalance</module>
         <module>common-hystrix</module>
+        <module>common-lock</module>
     </modules>
 
 

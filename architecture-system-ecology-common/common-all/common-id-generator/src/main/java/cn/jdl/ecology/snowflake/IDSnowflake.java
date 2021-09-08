@@ -17,9 +17,9 @@ public class IDSnowflake {
     /**
      * 每一部分占用的位数
      */
-    private final static long SEQUENCE_BIT = 12 ;   //序列号占用的位数
-    private final static long MACHINE_BIT = 5 ;     //机器标识占用的位数
-    private final static long DATA_CENTER_BIT = 5 ; //数据中心占用的位数
+    private final static long SEQUENCE_BIT = 12;   //序列号占用的位数
+    private final static long MACHINE_BIT = 5;     //机器标识占用的位数
+    private final static long DATA_CENTER_BIT = 5; //数据中心占用的位数
 
     /**
      * 每一部分的最大值
@@ -70,9 +70,7 @@ public class IDSnowflake {
     }
 
     /**
-     * @return
-     * 产生下一个ID
-     *
+     * @return 产生下一个ID
      */
     public synchronized long nextId() {
         long currTimeStamp = getNewTimeStamp();
