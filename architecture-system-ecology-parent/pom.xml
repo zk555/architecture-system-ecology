@@ -25,10 +25,10 @@
         <maven.javadoc.skip>true</maven.javadoc.skip>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
         <!-- spring -->
-        <spring-cloud.version>Hoxton.SR8</spring-cloud.version>
+        <spring-cloud.version>2.2.3.RELEASE</spring-cloud.version>
         <spring-boot.version>2.3.4.RELEASE</spring-boot.version>
         <spring-boot.version>2.3.4.RELEASE</spring-boot.version>
-        <spring-cloud-alibaba.version>2.2.3.RELEASE</spring-cloud-alibaba.version>
+        <spring-cloud-alibaba.version>2.1.2.RELEASE</spring-cloud-alibaba.version>
         <!-- paas -->
         <saas-dependencies.version>0.0.1-SNAPSHOT</saas-dependencies.version>
         <paas-dependencies.version>0.0.1-SNAPSHOT</paas-dependencies.version>
@@ -133,13 +133,13 @@
                 <version>${redisson.version}</version>
             </dependency>
             <!-- spring-cloud -->
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.cloud</groupId>-->
+<!--                <artifactId>spring-cloud-dependencies</artifactId>-->
+<!--                <version>${spring-cloud.version}</version>-->
+<!--                <type>pom</type>-->
+<!--                <scope>import</scope>-->
+<!--            </dependency>-->
 
             <!-- spring-alibaba -->
             <dependency>
@@ -601,6 +601,37 @@
                 <groupId>com.alibaba.nacos</groupId>
                 <artifactId>nacos-client</artifactId>
                 <version>${nacos.client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-openfeign-core</artifactId>
+                <version>${spring-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-commons</artifactId>
+                <version>${spring-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-config-server</artifactId>
+                <version>${spring-cloud.version}</version>
+            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.cloud</groupId>-->
+<!--                <artifactId>spring-cloud-dependencies</artifactId>-->
+<!--                <version>${spring-cloud-alibaba.version}</version>-->
+<!--            </dependency>-->
+            <!-- spring-alibaba -->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-openfeign</artifactId>
+                <version>${spring-cloud.version}</version>
             </dependency>
         </dependencies>
 

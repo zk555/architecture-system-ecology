@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>common-spring-application</module>
+        <module>common-spring-config-server</module>
     </modules>
 
 
