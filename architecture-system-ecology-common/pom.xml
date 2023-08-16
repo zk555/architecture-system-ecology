@@ -15,6 +15,8 @@
         <module>common-all</module>
         <module>common-annotation</module>
         <module>common-spring</module>
+        <module>common-easy-rules</module>
+        <module>common-all/common-util</module>
     </modules>
 
 </project>

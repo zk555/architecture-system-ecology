@@ -121,6 +121,11 @@
         <kafka.client.version>2.0.0</kafka.client.version>
         <spring.kafka.client.version>2.2.0.RELEASE</spring.kafka.client.version>
         <redisson.version>3.3.2</redisson.version>
+        <org.jeasy.version>4.1.0</org.jeasy.version>
+        <spring-expression.version>5.2.5.RELEASE</spring-expression.version>
+        <poi.vserion>3.17</poi.vserion>
+        <!-- 版本依赖 -->
+        <mapstruct.version>1.4.2.Final</mapstruct.version>
     </properties>
 
 
@@ -632,6 +637,63 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-openfeign</artifactId>
                 <version>${spring-cloud.version}</version>
+            </dependency>
+
+            <!--easy rules核心库-->
+            <dependency>
+                <groupId>org.jeasy</groupId>
+                <artifactId>easy-rules-core</artifactId>
+                <version>${org.jeasy.version}</version>
+            </dependency>
+
+            <!--规则定义文件格式，支持json,yaml等-->
+            <dependency>
+                <groupId>org.jeasy</groupId>
+                <artifactId>easy-rules-support</artifactId>
+                <version>${org.jeasy.version}</version>
+            </dependency>
+
+            <!--支持mvel规则语法库-->
+            <dependency>
+                <groupId>org.jeasy</groupId>
+                <artifactId>easy-rules-mvel</artifactId>
+                <version>${org.jeasy.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jeasy</groupId>
+                <artifactId>easy-rules-spel</artifactId>
+                <version>${org.jeasy.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-expression</artifactId>
+                <version>${spring-expression.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml-schemas</artifactId>
+                <version>${poi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>${poi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi</artifactId>
+                <version>${poi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct</artifactId>
+                <version>${mapstruct.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct-processor</artifactId>
+                <version>${mapstruct.version}</version>
             </dependency>
         </dependencies>
 

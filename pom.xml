@@ -19,6 +19,7 @@
         <module>architecture-system-ecology-common</module>
         <module>architecture-system-ecology-support</module>
         <module>architecture-system-ecology-pay</module>
+        <module>architecture-system-ecology-getway</module>
     </modules>
 
 </project>
