@@ -12,6 +12,6 @@ import cn.jdl.ecology.repository.Identifier;
 
 public interface CommandHandler<T, ID extends Identifier> {
 
-    OrderDTO handle(CheckoutCommand cmd);
+    OrderDTO handle(T cmd);
 
 }

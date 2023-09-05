@@ -31,4 +31,7 @@ public interface CheckoutService {
     List<OrderDTO> query(OrderQuery query);
     //单个查询
     OrderDTO getOrder(Long orderId); // 注意单一ID查询可以不用Query
+
+    // 下单
+    OrderDTO checkoutV2(@Valid CheckoutCommand cmd);
 }

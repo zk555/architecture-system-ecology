@@ -2,7 +2,7 @@ package cn.jdl.ecology.domain.service.impl;
 
 import cn.jdl.ecology.domain.entity.Player;
 import cn.jdl.ecology.domain.entity.Weapon;
-import cn.jdl.ecology.domain.service.EquipmentService;
+import cn.jdl.ecology.domain.service.IEquipmentService;
 import cn.jdl.ecology.domain.service.manager.EquipmentManager;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 @RequiredArgsConstructor
-public class EquipmentServiceImpl implements EquipmentService {
+public class EquipmentService implements IEquipmentService {
 
     private final EquipmentManager equipmentManager;
     @Override

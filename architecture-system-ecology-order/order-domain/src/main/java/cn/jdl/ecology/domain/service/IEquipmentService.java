@@ -10,6 +10,6 @@ import cn.jdl.ecology.domain.entity.Weapon;
  * 装备行为
  */
 
-public interface EquipmentService {
+public interface IEquipmentService {
     boolean canEquip(Player player, Weapon weapon);
 }

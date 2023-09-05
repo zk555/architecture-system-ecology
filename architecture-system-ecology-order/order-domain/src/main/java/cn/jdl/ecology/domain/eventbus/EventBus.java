@@ -8,6 +8,8 @@ import java.util.concurrent.Executor;
  */
 
 public class EventBus implements Bus {
+
+    //  事件注册器
     private final EventRegistry registry = new EventRegistry();
 
     private String busName;
@@ -16,6 +18,7 @@ public class EventBus implements Bus {
 
     private final static String DEFAULT_TOPIC = "default-topic";
 
+    // 事件分发器
     private final EventDispatcher dispatcher;
 
     public EventBus() {

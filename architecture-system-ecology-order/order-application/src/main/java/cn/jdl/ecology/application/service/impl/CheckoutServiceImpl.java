@@ -3,6 +3,7 @@ package cn.jdl.ecology.application.service.impl;
 import cn.jdl.ecology.application.assemble.OrderDtoAssembler;
 import cn.jdl.ecology.application.cqe.CheckoutCommand;
 import cn.jdl.ecology.application.dto.OrderDTO;
+import cn.jdl.ecology.application.handler.impl.CheckoutCommandHandler;
 import cn.jdl.ecology.application.service.CheckoutService;
 import cn.jdl.ecology.application.cqe.OrderQuery;
 import cn.jdl.ecology.application.cqe.UpdateOrderCommand;
@@ -37,7 +38,7 @@ public class CheckoutServiceImpl implements CheckoutService {
     private final OrderRepository orderRepository;
 
 
-//    private final CheckoutCommandHandler checkoutCommandHandler;
+    private final CheckoutCommandHandler checkoutCommandHandler;
 
     @Override
     public OrderDTO checkout(@Valid CheckoutCommand cmd) {
@@ -64,6 +65,19 @@ public class CheckoutServiceImpl implements CheckoutService {
         return orderDtoAssembler.orderToDTO(savedOrder);
 
 //        return checkoutCommandHandler.handle(cmd);
+    }
+    @Override
+    public OrderDTO checkoutV2(@Valid CheckoutCommand cmd) {
+        ItemDTO item = itemFacade.getItem(cmd.getItemId());
+        if (item == null) {
+            throw new IllegalArgumentException("Item not found");
+        }
+
+        boolean withholdSuccess = inventoryFacade.withhold(cmd.getItemId(), cmd.getQuantity());
+        if (!withholdSuccess) {
+            throw new IllegalArgumentException("Inventory not enough");
+        }
+        return checkoutCommandHandler.handle(cmd);
     }
 
     @Override

@@ -20,10 +20,15 @@ public class CombatService implements ICombatService {
     private final WeaponRepository weaponRepository;
     private final DamageManager damageManager;
 
+    /**
+     *  需要修改多个实体
+     *  monster --
+     *  player  ++
+     */
     @Override
     public void performAttack(Player player, Monster monster) {
         Weapon weapon = weaponRepository.find(player.getWeaponId());
-        int damage = damageManager.calculateDamage(player, weapon, monster);
+        int damage = damageManager.calculateDamage(player, weapon, monster);  //计算伤害
         if (damage > 0) {
             monster.takeDamage(damage); // （Note 1）在领域服务里变更Monster
         }

@@ -48,6 +48,9 @@ public class Order  implements Aggregate<OrderId> {
         lineItems.add(lineItem);
     }
 
+    /**
+     * 计算逻辑封装到核心对象
+     */
     public Long getTotalCost() {
         return itemUnitPrice * count;
     }

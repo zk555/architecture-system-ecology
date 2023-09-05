@@ -5,6 +5,8 @@ import cn.jdl.ecology.domain.entity.Player;
 import cn.jdl.ecology.domain.entity.Weapon;
 
 /**
+ *
+ * 策略优先级
  * @author chaoyang
  * @date 2022年09月07日 10:21
  */

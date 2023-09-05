@@ -58,6 +58,11 @@
             <artifactId>mapstruct-jdk8</artifactId>
             <version>1.5.2.Final</version>
         </dependency>
+        <dependency>
+            <groupId>cn.jdl.ecology</groupId>
+            <artifactId>order-application</artifactId>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
 </project>

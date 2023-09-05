@@ -2,7 +2,7 @@ package cn.jdl.ecology.application.service.impl;
 
 import cn.jdl.ecology.datahelper.vo.Result;
 import cn.jdl.ecology.domain.entity.Account;
-import cn.jdl.ecology.domain.service.IAccountTransferService;
+import cn.jdl.ecology.domain.service.AccountTransferService;
 import cn.jdl.ecology.domain.types.AuditMessage;
 import cn.jdl.ecology.external.IExchangeRateService;
 import cn.jdl.ecology.message.IAuditMessageProducer;
@@ -25,7 +25,7 @@ public class TransferServiceImplNew implements TransferService {
     private final AccountRepository accountRepository;
     private final IAuditMessageProducer auditMessageProducer;
     private final IExchangeRateService exchangeRateService;
-    private final IAccountTransferService accountTransferService;
+    private final AccountTransferService accountTransferService;
 
     @Override
     public Result<Boolean> transfer(Long sourceUserId, String targetAccountNumber, BigDecimal targetAmount,

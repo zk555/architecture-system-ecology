@@ -12,7 +12,13 @@ import cn.jdl.ecology.domain.entity.Weapon;
 
 public interface DamagePolicy {
 
+    /**
+     *  是否适用
+     */
     boolean canApply(Player player, Weapon weapon, Monster monster);
 
+    /**
+     * 业务方法
+     */
     int calculateDamage(Player player, Weapon weapon, Monster monster);
 }

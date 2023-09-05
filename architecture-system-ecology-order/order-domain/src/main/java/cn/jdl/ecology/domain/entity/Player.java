@@ -2,7 +2,7 @@ package cn.jdl.ecology.domain.entity;
 
 
 import cn.jdl.ecology.domain.enums.PlayerClass;
-import cn.jdl.ecology.domain.service.EquipmentService;
+import cn.jdl.ecology.domain.service.IEquipmentService;
 import cn.jdl.ecology.types.PlayerId;
 import cn.jdl.ecology.types.Transform;
 import cn.jdl.ecology.types.Vector;
@@ -22,14 +22,19 @@ public class Player implements Movable {
     private Transform position = Transform.ORIGIN;
     private Vector velocity = Vector.ZERO;
 
-    public void equip(Weapon weapon, EquipmentService equipmentService) {
+    /**
+     * BAD: Player 不可以直接依赖另一个Entity或服务，
+     * IEquipmentService 入参方式传入增强可测性，不会污染Player的自有状态
+     * @param weapon
+     * @param equipmentService
+     */
+    public void equip(Weapon weapon, IEquipmentService equipmentService) {
         if (equipmentService.canEquip(this, weapon)) {
             this.weaponId = weapon.getId();
         } else {
             throw new IllegalArgumentException("Cannot Equip: " + weapon);
         }
     }
-
 
     @Override
     public Transform getPosition() {
